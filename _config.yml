@@ -1,5 +1,5 @@
 # Site settings
-title: DODECAEDRO.MX
+title: Dodecaedro.mx
 description: > # this means to ignore newlines until "baseurl:"
   Dodecaedro es una página comprometida con la cultura del cine, literatura, artes plásticas, y música local mexicana.
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -26,3 +26,157 @@ transfer:
   settings: -av
   source: _site/
   destination: ~/Git/username.github.com/
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://dodecaedro.mx'
+  media: 'assets/img'
+  metadata:
+    _posts/Cine/Reseñas:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "category"
+        field:
+          element: "hidden"
+          value:
+            - 'cine'
+            - 'cine-resenas'
+      - name: "thumbnail"
+        field:
+          element: "text"
+          label: "Imagen de previsualización"
+          value: "/assets/img/mi-imagen.jpg"
+      - name: "author"
+        field:
+          element: "select"
+          label: "Tu Nombre o Dodecaedro si es un trabajo en equipo."
+          options:
+            - name: "Dodecaedro"
+              value: "Dodecaedro"
+            - name: "Said Pulido"
+              value: "Said Pulido"
+            - name: "MGM"
+              value: "MGM"
+            - name: "Maro"
+              value: "Maro"
+            - name: "Sebastián Alfaro"
+              value: "Sebastián Alfaro"
+            - name: "Sebastián López"
+              value: "Sebastián López"
+    _posts/Fotografía/Gifwalls:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "wall"
+      - name: "category"
+        field:
+          element: "hidden"
+          value:
+            - 'foto'
+            - 'foto-gifwalls'
+      - name: "thumbnail"
+        field:
+          element: "text"
+          label: "Imagen de previsualización"
+          value: "/assets/img/mi-imagen.jpg"
+      - name: "author"
+        field:
+          element: "select"
+          label: "Tu Nombre o Dodecaedro si es un trabajo en equipo."
+          options:
+            - name: "Dodecaedro"
+              value: "Dodecaedro"
+            - name: "Said Pulido"
+              value: "Said Pulido"
+            - name: "MGM"
+              value: "MGM"
+            - name: "Maro"
+              value: "Maro"
+            - name: "Sebastián Alfaro"
+              value: "Sebastián Alfaro"
+            - name: "Sebastián López"
+              value: "Sebastián López"
+    _posts/Letras/Ensayos:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "wall"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: 
+            - 'letras'
+            - 'letras-ensayos'
+      - name: "thumbnail"
+        field:
+          element: "text"
+          label: "Imagen de previsualización"
+          value: "/assets/img/mi-imagen.jpg"
+      - name: "author"
+        field:
+          element: "select"
+          label: "Tu Nombre o Dodecaedro si es un trabajo en equipo."
+          options:
+            - name: "Dodecaedro"
+              value: "Dodecaedro"
+            - name: "Said Pulido"
+              value: "Said Pulido"
+            - name: "MGM"
+              value: "MGM"
+            - name: "Maro"
+              value: "Maro"
+            - name: "Sebastián Alfaro"
+              value: "Sebastián Alfaro"
+            - name: "Sebastián López"
+              value: "Sebastián López"
+    _posts/Letras/Historias:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "wall"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: 
+            - 'letras'
+            - 'letras-historias'
+      - name: "thumbnail"
+        field:
+          element: "text"
+          label: "Imagen de previsualización"
+          value: "/assets/img/mi-imagen.jpg"
+      - name: "author"
+        field:
+          element: "select"
+          label: "Tu Nombre o Dodecaedro si es un trabajo en equipo."
+          options:
+            - name: "Dodecaedro"
+              value: "Dodecaedro"
+            - name: "Said Pulido"
+              value: "Said Pulido"
+            - name: "MGM"
+              value: "MGM"
+            - name: "Maro"
+              value: "Maro"
+            - name: "Sebastián Alfaro"
+              value: "Sebastián Alfaro"
+            - name: "Sebastián López"
+              value: "Sebastián López"
